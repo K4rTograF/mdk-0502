@@ -1,0 +1,111 @@
+object Form1: TForm1
+  Left = 728
+  Height = 375
+  Top = 284
+  Width = 842
+  Caption = 'Form1'
+  ClientHeight = 375
+  ClientWidth = 842
+  DesignTimePPI = 192
+  LCLVersion = '3.2.0.0'
+  Scaled = False
+  object CountMounth: TEdit
+    Left = 16
+    Height = 40
+    Top = 128
+    Width = 257
+    NumbersOnly = True
+    TabOrder = 0
+    Text = '0'
+    OnChange = CountMounthChange
+  end
+  object Procents: TEdit
+    Left = 20
+    Height = 40
+    Top = 200
+    Width = 253
+    NumbersOnly = True
+    TabOrder = 1
+    Text = '0'
+    OnChange = ProcentsChange
+  end
+  object Sum: TEdit
+    Left = 16
+    Height = 40
+    Top = 272
+    Width = 257
+    NumbersOnly = True
+    TabOrder = 2
+    Text = '0'
+    OnChange = SumChange
+  end
+  object TypeProcent: TComboBox
+    Left = 16
+    Height = 40
+    Top = 48
+    Width = 257
+    ItemHeight = 32
+    Items.Strings = (
+      'Простые проценты'
+      'Сложные проценты'
+    )
+    TabOrder = 3
+    Text = 'select a percent type'
+    OnChange = TypeProcentChange
+  end
+  object d: TStaticText
+    Left = 16
+    Height = 29
+    Top = 16
+    Width = 257
+    Caption = 'procent type'
+    TabOrder = 4
+    OnClick = DaysClick
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 50
+    Top = 312
+    Width = 257
+    Caption = 'calculate'
+    TabOrder = 5
+    OnClick = Button1Click
+  end
+  object Days: TLabel
+    Left = 16
+    Height = 32
+    Top = 95
+    Width = 190
+    Caption = 'amount of month'
+    OnClick = DaysClick
+  end
+  object Days1: TLabel
+    Left = 16
+    Height = 32
+    Top = 168
+    Width = 159
+    Caption = 'month percent'
+    OnClick = DaysClick
+  end
+  object Days2: TLabel
+    Left = 16
+    Height = 32
+    Top = 240
+    Width = 79
+    Caption = 'deposit'
+    OnClick = DaysClick
+  end
+  object Memo1: TMemo
+    Left = 289
+    Height = 356
+    Top = 10
+    Width = 534
+    Lines.Strings = (
+      'Отчёт о расчётах'
+    )
+    ReadOnly = True
+    ScrollBars = ssAutoVertical
+    TabOrder = 6
+    OnChange = Memo1Change
+  end
+end
